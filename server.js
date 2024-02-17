@@ -16,6 +16,10 @@ server.get("/", (req, res)=>{
    res.send( "this app server")
 });
 
+server.get("/new", (req, res)=>{
+    res.send( "this is new page")
+ });
+
 server.listen(port, ()=>{
     console.log(`This server on port ${port}`);
 })
